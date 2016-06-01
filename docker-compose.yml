@@ -28,3 +28,5 @@ web:
       # This directory must have cert files
     - ./volumes/web/cert:/cert:ro
     - /etc/localtime:/etc/localtime:ro
+  environment:
+    - MATTERMOST_ENABLE_SSL=false
